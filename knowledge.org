@@ -10,3 +10,7 @@
 * アプリのページにタブとしてアプリを追加する方法
   これ!
   https://www.facebook.com/dialog/pagetab?app_id=245281592217300&display=popup&next=http://dl.dropbox.com/u/3622136/giri/index.html?
+
+* HerokuアプリでSSLを使う
+  Piggyback SSL
+  http://addons.heroku.com/ssl
