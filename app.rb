@@ -12,7 +12,7 @@ helpers do
 
   def decode_data str
     encoded_sig, payload = str.split(".")
-    data = ActiveSupport::JSON.decode base64_url_decode(payload)
+    data = JSON.parse base64_url_decode(payload)
   end
 end
 
