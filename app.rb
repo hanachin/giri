@@ -30,7 +30,7 @@ post "/" do
   return "タブページではない" unless signed_request["page"]
 
   if signed_request["page"]["liked"]
-    "いいね！が押されてる"
+    erb :index
   else
     "いいね！が押されてない"
   end
