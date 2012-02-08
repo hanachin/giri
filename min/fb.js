@@ -31,8 +31,6 @@
       }
     });
     return connected = function(res) {
-      console.log(res.authResponse.signedRequest);
-      console.log(parse_signed_request(res.authResponse.signedRequest));
       return FB.api('/me/permissions', function(res) {
         var _ref, _ref2;
         console.log(res);
