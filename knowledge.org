@@ -14,3 +14,11 @@
 * HerokuアプリでSSLを使う
   Piggyback SSL
   http://addons.heroku.com/ssl
+
+* Sinatraのページを別ドメインのiframe内に表示する
+  クリックジャッキング攻撃の対策でx-frame-optionsのheaderを送出しているので
+  別ドメインのiframeの中だと表示出来ない
+  表示出来るようにするにはx-frame-optionsの送出を押さえる
+  set :protection, :except => :frame_options
+  あるいはprotectionを全部無効にする
+  disable :protection
