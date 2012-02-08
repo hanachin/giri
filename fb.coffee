@@ -26,8 +26,6 @@ window.fbAsyncInit = ->
       login()
 
   connected = (res) ->
-    console.log res.authResponse.signedRequest
-    console.log parse_signed_request res.authResponse.signedRequest
     FB.api '/me/permissions', (res) ->
       console.log res
       if res.data?[0]?.publish_stream
