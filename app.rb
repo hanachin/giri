@@ -2,6 +2,7 @@
 # Facebookページのいいね！ボタンが押されているかをSinatraで判定する
 # http://d.hatena.ne.jp/ruedap/20110614/heroku_sinatra_facebook_page_tab_iine
 require "sinatra"
+require "json"
 
 helpers do
   def base64_url_decode str
