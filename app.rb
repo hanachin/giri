@@ -3,6 +3,7 @@
 # http://d.hatena.ne.jp/ruedap/20110614/heroku_sinatra_facebook_page_tab_iine
 require "sinatra"
 require "json"
+require "base64"
 
 helpers do
   def base64_url_decode str
