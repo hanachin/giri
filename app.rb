@@ -27,7 +27,7 @@ end
 post "/" do
   signed_request = decode_data(params[:signed_request])
 
-  return "タブページではない" unless signed_request["page"]
+  return erb :index unless signed_request["page"]
 
   if signed_request["page"]["liked"]
     erb :index
