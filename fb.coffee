@@ -1,6 +1,7 @@
 window.fbAsyncInit = ->
+  appId = "245281592217300"
   FB.init
-    appId: "245281592217300"
+    appId: appId
     channelUrl: "//dl.dropbox.com/u/3622136/giri/channel.html"
     status: true
     cookie: true
@@ -29,7 +30,17 @@ window.fbAsyncInit = ->
     FB.api '/me/permissions', (res) ->
       console.log res
       if res.data?[0]?.publish_stream
-        console.log "test"
+        console.log "upload photo"
+        imgUrl = "http://upload.wikimedia.org/wikipedia/commons/f/f2/Chocolate.jpg"
+        FB.api("/#{appId}/photos", "post", {
+          message: "義理チョコ診断"
+          url: imgUrl
+        }, (res) ->
+          if not res? or res.error
+            alert "Error occured"
+          else
+            console.log "Post ID: #{res.id}"
+        )
 
 ((d) ->
   js = undefined
