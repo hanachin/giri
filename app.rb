@@ -5,6 +5,8 @@ require "sinatra"
 require "json"
 require "base64"
 
+set :protection, :except => :frame_options
+
 helpers do
   def base64_url_decode str
     encoded_str = str.gsub("-","+").gsub("_","/")
