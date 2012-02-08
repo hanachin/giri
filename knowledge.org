@@ -1,0 +1,9 @@
+* Likeされてるか取る方法
+  Likeされてるか取る方法は、Facebookページのタブのアプリでしか使えない
+
+* アプリのページを作る方法
+  アプリのページは、アプリの詳細の一番したの方のボタンから作れる
+
+* アプリのページにタブとしてアプリを追加する方法
+  これ!
+  https://www.facebook.com/dialog/pagetab?app_id=245281592217300&display=popup&next=http://dl.dropbox.com/u/3622136/giri/index.html?
