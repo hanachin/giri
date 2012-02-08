@@ -6,6 +6,7 @@ require "json"
 require "base64"
 
 set :protection, :except => :frame_options
+set :public_folder, File.dirname(__FILE__) + "/public"
 
 helpers do
   def base64_url_decode str
